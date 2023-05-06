@@ -24,7 +24,7 @@ import java.nio.charset.StandardCharsets;
 
 public class CopiameBot extends TelegramLongPollingBot {
 
-	public String apiEndpoint = "http://localhost:8080";
+	public String apiEndpoint = System.getenv("API_ENDPOINT");
 	public CopiameBot(String botToken) {
 		super(botToken);
 	}
